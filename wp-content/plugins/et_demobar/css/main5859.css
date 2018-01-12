@@ -1,0 +1,865 @@
+@import url(fonts/font-face.css);
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+.et-plugin-demobar {
+    position: fixed;
+    top: 0;
+    right: -434px;
+    z-index: 1111;
+    display: block;
+    height: 100%;
+    width: 434px;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+    line-height: initial;
+    font-family: 'Lato', sans-serif;
+}
+
+.et-plugin-demobar ol, .et-plugin-demobar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.et-plugin-demobar blockquote, .et-plugin-demobar q {
+    quotes: none
+}
+
+.et-plugin-demobar blockquote:before, .et-plugin-demobar blockquote:after, .et-plugin-demobar q:before, .et-plugin-demobar q:after {
+    content: '';
+    content: none
+}
+
+.et-plugin-demobar table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.et-plugin-demobar *::after, .et-plugin-demobar *::before, .et-plugin-demobar * {
+    box-sizing: border-box
+}
+
+.et-plugin-demobar img {
+    max-width: 100%
+}
+
+.et-plugin-demobar .btn-actions {
+    display: block;
+    margin-top: 140px;
+    margin-left: -48px;
+    background-color: #fff;
+    padding: 0;
+    width: 48px;
+    border: 1px solid #a4a5a6;
+    border-right: none
+}
+
+.et-plugin-demobar .btn-actions li {
+    display: block;
+    text-align: center
+}
+
+.et-plugin-demobar .btn-actions li a.btn-demobar {
+    padding: 13px;
+    color: #a4a5a6;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    vertical-align: middle;
+    -moz-user-select: none;
+    cursor: pointer
+}
+
+.et-plugin-demobar .btn-actions li a.btn-demobar:hover, .et-plugin-demobar .btn-actions li a.btn-demobar.active {
+    color: #34495e
+}
+
+.et-plugin-demobar .btn-actions li + li:before {
+    content: '';
+    height: 1px;
+    width: 70%;
+    text-align: center;
+    display: block;
+    background: #a4a5a6;
+    position: relative;
+    left: 15%;
+    top: 0
+}
+
+.et-plugin-demobar .btn-actions li.tooltip-loadpage {
+    display: none;
+    right: 70px;
+    top: 140px;
+    background: #fff;
+    position: fixed;
+    padding: 15px;
+    border-radius: 3px
+}
+
+.me-loadpage {
+    background: #e84a5f !important;
+    color: #fff;
+}
+
+.et-plugin-demobar .btn-actions li.tooltip-loadpage:before {
+    content: '';
+    height: 12px;
+    width: 12px;
+    display: block;
+    background: none;
+    left: auto;
+    position: absolute;
+    top: 10px;
+    right: -12px;
+    border-style: solid;
+    border-width: 7.5px 0 7.5px 10px;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.me-loadpage:before {
+    border-color: transparent transparent transparent #e84a5f !important;
+}
+
+.et-plugin-demobar .demobar-container {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    font-family: "Proxima Nova";
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: initial;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.et-plugin-demobar .demobar-container .list-actions {
+    width: 100%;
+    display: block;
+    padding: 30px
+}
+
+.et-plugin-demobar .demobar-container .list-actions li {
+    width: 49%;
+    display: inline-block
+}
+
+.et-plugin-demobar .demobar-container .list-actions li a {
+    width: 90%;
+    padding: 7px 0;
+    text-align: center;
+    display: block;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: initial
+}
+
+.et-plugin-demobar .demobar-container .list-actions li .btn-get-now {
+    background: #eb5559;
+    color: #fff;
+    float: left
+}
+
+.et-plugin-demobar .demobar-container .list-actions li .btn-sale-page {
+    float: right;
+    background: #fff;
+    border: 1px solid #eb5559;
+    color: #eb5559
+}
+
+.et-plugin-demobar .demobar-container .devices-block {
+    width: 100%
+}
+
+.et-plugin-demobar .demobar-container .devices-block .header-demobar-block {
+    background: #ebebec;
+    padding: 12px 30px
+}
+
+.et-plugin-demobar .demobar-container .devices-block .header-demobar-block span {
+    color: #a4a5a6;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent {
+    width: 100%;
+    padding: 30px;
+    list-style: none
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent ul {
+    width: 100%
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent ul li {
+    width: 31%;
+    display: inline-block;
+    height: 80px
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent ul li span {
+    width: 100%;
+    text-align: center;
+    color: #a4a5a6;
+    display: block;
+    margin-top: 3px;
+    font-size: 14px;
+    font-family: "Proxima Nova";
+    font-weight: 600;
+    text-shadow: none
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent ul li:hover span, .et-plugin-demobar .demobar-container .devices-block .change-agent ul li.active span {
+    color: #34495e
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent ul li a {
+    border: 1px solid #d7d8da;
+    height: 100%;
+    width: 100%;
+    display: block
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent ul li:hover > a, .et-plugin-demobar .demobar-container .devices-block .change-agent ul li.active > a {
+    border: 3px solid #34495e
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent ul li a.desk {
+    background: url(../img/desk-icon.png) center center no-repeat
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent ul li a.tab {
+    background: url(../img/tablet-icon.png) center center no-repeat
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent ul li a.phone {
+    background: url(../img/mobile-icon.png) center center no-repeat
+}
+
+.et-plugin-demobar .demobar-container .devices-block .change-agent ul li + li {
+    margin-left: 2%
+}
+
+.et-plugin-demobar .demobar-container .collapse-block, .et-plugin-demobar .demobar-container .related-themes {
+    width: 100%
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel, .et-plugin-demobar .demobar-container .related-themes .panel {
+    box-shadow: none;
+    border: none;
+    border-radius: 0
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    background: #ebebec
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #a4a5a6;
+    display: block;
+    width: 100%;
+    font-family: "Proxima Nova"
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title > a, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title > a {
+    display: block;
+    padding: 12px 30px
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title > a .iconBlock, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title > a .iconBlock {
+    font-family: 'FontAwesome';
+    float: right;
+    display: block;
+    text-align: right
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title > a .iconBlock:before, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title > a .iconBlock:before {
+    font-family: 'FontAwesome';
+    content: '\f077'
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title > a.collapsed, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title > a.collapsed {
+    color: #a4a5a6
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title > a.collapsed .iconBlock, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title > a.collapsed .iconBlock {
+    font-family: 'FontAwesome'
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title > a.collapsed .iconBlock:before, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title > a.collapsed .iconBlock:before {
+    font-family: 'FontAwesome';
+    content: '\f054'
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title > a.collapsed:after, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title > a.collapsed:after {
+    content: "" !important
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title > a:hover, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title > a:hover, .et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title > a.active, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title > a.active, .et-plugin-demobar .demobar-container .collapse-block .panel .panel-heading .panel-title > a:focus, .et-plugin-demobar .demobar-container .related-themes .panel .panel-heading .panel-title > a:focus {
+    color: #eb5559 !important
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel:first-child .panel-body .list-options, .et-plugin-demobar .demobar-container .related-themes .panel:first-child .panel-body .list-options {
+    margin-top: 35px;
+    position: relative
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel:first-child .panel-body .list-options:first-child, .et-plugin-demobar .demobar-container .related-themes .panel:first-child .panel-body .list-options:first-child {
+    margin: 53px 0
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel:first-child .panel-body .list-options li, .et-plugin-demobar .demobar-container .related-themes .panel:first-child .panel-body .list-options li {
+    margin: 5px 0 18px 0
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel:first-child .panel-body .list-options label, .et-plugin-demobar .demobar-container .related-themes .panel:first-child .panel-body .list-options label {
+    display: block;
+    position: absolute;
+    top: -47px;
+    left: -33px;
+    background: #e9535c;
+    padding: 8px 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-body, .et-plugin-demobar .demobar-container .related-themes .panel .panel-body {
+    padding: 12px 30px;
+    background: #fff
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-body .list-options li, .et-plugin-demobar .demobar-container .related-themes .panel .panel-body .list-options li {
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 35px
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-body .list-options li:nth-child(2n), .et-plugin-demobar .demobar-container .related-themes .panel .panel-body .list-options li:nth-child(2n), .et-plugin-demobar .demobar-container .collapse-block .panel .panel-body .list-options li:nth-of-type(2n), .et-plugin-demobar .demobar-container .related-themes .panel .panel-body .list-options li:nth-of-type(2n) {
+    text-align: right
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-body .list-options li.active .frame-img, .et-plugin-demobar .demobar-container .related-themes .panel .panel-body .list-options li.active .frame-img, .et-plugin-demobar .demobar-container .collapse-block .panel .panel-body .list-options li:hover .frame-img, .et-plugin-demobar .demobar-container .related-themes .panel .panel-body .list-options li:hover .frame-img {
+    box-shadow: 0 0 0 3px #34495e
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-body .list-options li.active span, .et-plugin-demobar .demobar-container .related-themes .panel .panel-body .list-options li.active span, .et-plugin-demobar .demobar-container .collapse-block .panel .panel-body .list-options li:hover span, .et-plugin-demobar .demobar-container .related-themes .panel .panel-body .list-options li:hover span {
+    color: #34495e
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-body .list-options li a, .et-plugin-demobar .demobar-container .related-themes .panel .panel-body .list-options li a {
+    display: inline-block;
+    width: 93%;
+    height: 110px
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-body .list-options li a .frame-img, .et-plugin-demobar .demobar-container .related-themes .panel .panel-body .list-options li a .frame-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.15)
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel .panel-body .list-options li a span, .et-plugin-demobar .demobar-container .related-themes .panel .panel-body .list-options li a span {
+    color: #a4a5a6;
+    font-family: "Proxima Nova";
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel.panel-default[data-user*="versions"] .list-options li, .et-plugin-demobar .demobar-container .related-themes .panel.panel-default[data-user*="versions"] .list-options li {
+    width: 30%;
+    margin: 0
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel.panel-default[data-user*="versions"] .list-options li + li, .et-plugin-demobar .demobar-container .related-themes .panel.panel-default[data-user*="versions"] .list-options li + li {
+    margin-left: 4%
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel.panel-default[data-user*="versions"] .list-options li a, .et-plugin-demobar .demobar-container .related-themes .panel.panel-default[data-user*="versions"] .list-options li a {
+    height: 80px;
+    width: 100%
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel.panel-default[data-user*="versions"] .list-options li a .frame-img, .et-plugin-demobar .demobar-container .related-themes .panel.panel-default[data-user*="versions"] .list-options li a .frame-img {
+    box-shadow: none;
+    border: 1px solid #d7d8da;
+    padding: 2px
+}
+
+.et-plugin-demobar .demobar-container .collapse-block .panel.panel-default[data-user*="versions"] .list-options li.active a .frame-img, .et-plugin-demobar .demobar-container .related-themes .panel.panel-default[data-user*="versions"] .list-options li.active a .frame-img, .et-plugin-demobar .demobar-container .collapse-block .panel.panel-default[data-user*="versions"] .list-options li:hover a .frame-img, .et-plugin-demobar .demobar-container .related-themes .panel.panel-default[data-user*="versions"] .list-options li:hover a .frame-img {
+    padding: 0;
+    border: 3px solid #34495e
+}
+
+.et-plugin-demobar .demobar-container .related-themes {
+    padding: 12px 30px
+}
+
+.et-plugin-demobar .demobar-container .related-themes h5 {
+    /*margin-top: 45px;*/
+    border-top: 1px solid #ebebec;
+    padding-top: 17px;
+    margin-bottom: 25px
+}
+
+.et-plugin-demobar .demobar-container .another-layouts h5 {
+    margin-top: 0;
+    border-top: none;
+    padding-top: 17px;
+    margin-bottom: 25px
+}
+
+.et-plugin-demobar .demobar-container .related-themes .list-options li {
+    width: 49%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 35px
+}
+
+.et-plugin-demobar .demobar-container .related-themes .list-options li:nth-child(2n), .et-plugin-demobar .demobar-container .related-themes .list-options li:nth-of-type(2n) {
+    text-align: right
+}
+
+.et-plugin-demobar .demobar-container .related-themes .list-options li.active .frame-img, .et-plugin-demobar .demobar-container .related-themes .list-options li:hover .frame-img {
+    box-shadow: 0 0 0 3px #34495e
+}
+
+.et-plugin-demobar .demobar-container .related-themes .list-options li.active span, .et-plugin-demobar .demobar-container .related-themes .list-options li:hover span {
+    color: #34495e
+}
+
+.et-plugin-demobar .demobar-container .related-themes .list-options li a {
+    display: inline-block;
+    width: 93%;
+    height: 110px
+}
+
+.et-plugin-demobar .demobar-container .related-themes .list-options li a .frame-img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 3px 3px 0 0 #e5e5e5
+}
+
+.et-plugin-demobar .demobar-container .related-themes .list-options li a span {
+    color: #a4a5a6;
+    font-family: "Proxima Nova";
+    font-size: 14px;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center
+}
+
+.et-plugin-demobar.show-demobar {
+    right: 0;
+    -webkit-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s
+}
+
+.et-plugin-demobar .tooltip {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1070;
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-break: auto;
+    line-height: 1.42857;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    white-space: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal
+}
+
+.et-plugin-demobar .tooltip .tooltip-inner {
+    padding: 6px 10px
+}
+
+.et-plugin-demobar .mCSB_inside > .mCSB_container {
+    margin-right: 0
+}
+
+.et-plugin-demobar .mCSB_inside > .mCSB_scrollTools {
+    right: -6px
+}
+
+#package_modal {
+    z-index: 999999;
+    background-color: #fafafa;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    overflow-y: auto;
+    font-family: "Proxima Nova"
+}
+
+#package_modal.animated {
+    display: block
+}
+
+#package_modal .modal-demobar-dialog {
+    margin: 0 auto
+}
+
+#package_modal .modal-demobar-dialog .close span {
+    font-size: 50px;
+    position: absolute;
+    font-weight: bold;
+    color: #000
+}
+
+#package_modal .modal-demobar-dialog .btn-close-modal-bar {
+    z-index: 9999999999;
+    background: none;
+    border: none;
+    width: 30px;
+    height: 50px;
+    display: block;
+    outline: none;
+    position: absolute;
+    right: 0
+}
+
+#package_modal .modal-demobar-dialog .btn-close-modal-bar > span {
+    font-size: 45px;
+    font-weight: bold;
+    opacity: 0.2;
+    color: #000;
+    -webkit-transition: opacity ease 1s;
+    transition: opacity ease 1s
+}
+
+#package_modal .modal-demobar-dialog .btn-close-modal-bar:hover > span {
+    opacity: 1
+}
+
+.demobar-blur-theme {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    -webkit-transition: opacity 0s ease-in-out 0s;
+    transition: opacity 0s ease-in-out 0s
+}
+
+.demobar-blur-theme.in {
+    opacity: 1;
+    z-index: 1110;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s
+}
+
+body.detect_page {
+    position: relative;
+    overflow: auto
+}
+
+body.detect_page #loadingDetect {
+    background: rgba(255, 255, 255, 0.3) url("../img/ajax-loader.gif") no-repeat center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.hide {
+    display: none !important;
+}
+
+@-webkit-keyframes zoomOut {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3)
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3)
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+.zoomOut {
+    -webkit-animation-name: zoomOut;
+    animation-name: zoomOut
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3)
+    }
+    50% {
+        opacity: 1
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn
+}
+
+.animated {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+.active .wrapper-loading {
+    display: block;
+}
+
+.et-plugin-demobar .frame-img {
+    position: relative;
+}
+
+.wrapper-loading {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 100%;
+    display: none
+}
+
+.cssload-loader {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    margin: 2em;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.cssload-loader {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    margin: 2em;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+.cssload-loader,
+.cssload-loader:before,
+.cssload-loader:after {
+    animation: 0.65s infinite ease-in-out;
+    -o-animation: 0.65s infinite ease-in-out;
+    -ms-animation: 0.65s infinite ease-in-out;
+    -webkit-animation: 0.65s infinite ease-in-out;
+    -moz-animation: 0.65s infinite ease-in-out;
+}
+
+.cssload-loader:before,
+.cssload-loader:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cssload-loader:before,
+.cssload-loader:after {
+    content: "";
+}
+
+.cssload-loader {
+    animation: cssload-animation1 0.65s infinite linear;
+    -o-animation: cssload-animation1 0.65s infinite linear;
+    -ms-animation: cssload-animation1 0.65s infinite linear;
+    -webkit-animation: cssload-animation1 0.65s infinite linear;
+    -moz-animation: cssload-animation1 0.65s infinite linear;
+}
+
+.cssload-loader:before,
+.cssload-loader:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    background-color: rgb(51, 51, 51);
+    top: 5%;
+}
+
+.cssload-loader:before {
+    left: -5%;
+    animation: cssload-animation2 0.65s infinite alternate ease-in-out;
+    -o-animation: cssload-animation2 0.65s infinite alternate ease-in-out;
+    -ms-animation: cssload-animation2 0.65s infinite alternate ease-in-out;
+    -webkit-animation: cssload-animation2 0.65s infinite alternate ease-in-out;
+    -moz-animation: cssload-animation2 0.65s infinite alternate ease-in-out;
+    transform-origin: 10% 50%;
+    -o-transform-origin: 10% 50%;
+    -ms-transform-origin: 10% 50%;
+    -webkit-transform-origin: 10% 50%;
+    -moz-transform-origin: 10% 50%;
+}
+
+.cssload-loader:after {
+    left: auto;
+    right: -5%;
+    animation: cssload-animation2 0.65s 0.65s infinite alternate ease-in-out;
+    -o-animation: cssload-animation2 0.65s 0.65s infinite alternate ease-in-out;
+    -ms-animation: cssload-animation2 0.65s 0.65s infinite alternate ease-in-out;
+    -webkit-animation: cssload-animation2 0.65s 0.65s infinite alternate ease-in-out;
+    -moz-animation: cssload-animation2 0.65s 0.65s infinite alternate ease-in-out;
+    transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform-origin: 90% 50%;
+}
+
+@keyframes cssload-animation1 {
+    0% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(380deg);
+    }
+}
+
+@-o-keyframes cssload-animation1 {
+    0% {
+        -o-transform: rotate(20deg);
+    }
+    100% {
+        -o-transform: rotate(380deg);
+    }
+}
+
+@-ms-keyframes cssload-animation1 {
+    0% {
+        -ms-transform: rotate(20deg);
+    }
+    100% {
+        -ms-transform: rotate(380deg);
+    }
+}
+
+@-webkit-keyframes cssload-animation1 {
+    0% {
+        -webkit-transform: rotate(20deg);
+    }
+    100% {
+        -webkit-transform: rotate(380deg);
+    }
+}
+
+@-moz-keyframes cssload-animation1 {
+    0% {
+        -moz-transform: rotate(20deg);
+    }
+    100% {
+        -moz-transform: rotate(380deg);
+    }
+}
+
+@keyframes cssload-animation2 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes cssload-animation2 {
+    0% {
+        -o-transform: scale(0);
+    }
+    100% {
+        -o-transform: scale(1);
+    }
+}
+
+@-ms-keyframes cssload-animation2 {
+    0% {
+        -ms-transform: scale(0);
+    }
+    100% {
+        -ms-transform: scale(1);
+    }
+}
+
+@-webkit-keyframes cssload-animation2 {
+    0% {
+        -webkit-transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@-moz-keyframes cssload-animation2 {
+    0% {
+        -moz-transform: scale(0);
+    }
+    100% {
+        -moz-transform: scale(1);
+    }
+}
